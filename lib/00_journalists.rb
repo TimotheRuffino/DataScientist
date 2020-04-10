@@ -21,7 +21,7 @@ puts "Combien contiennent au moins une majuscule ?"
 puts ">Il y a #{journalistes.count{ |x| x[/[A-Z]/]}} contenant au moins une majuscule"
 
 puts ">Combien y a-t-il de underscore _ dans tous les pseudos confondus ?"
-puts "Il y a #{journalistes.count{ |x| x[/[_]/]}} _ dans tous les pseudos confondus"
+puts "Il y a #{journalistes.count{ |x| x[/[_]/]}} _ dans tous les pseudos confondus" # 75 _ underscore : 3 de plus il fallat changer en string avec to.s
 
 puts "Voici la liste de handle par ordre alphabétique"
 puts journalistes.sort_by(&:downcase) #sort_by = faire sortir par ordre alpha et downcase fait ignorer maj ou minuscule
